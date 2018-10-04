@@ -25,6 +25,7 @@ In cas you dod not work during the week, you still need to report it with
 # Week Fri 09/28/18 - 10/04/18
 
 * Worked on the technologies summaries assignment 
+* Attended online session with TAs
 
 # Week Fri 10/05/18 - 10/11/18
 
