@@ -4,3 +4,20 @@ owner:
   lastname: "Dash"
   hid: "fa18-523-70"
   community: "i523"
+  semester: : "fa18"
+  technologies:
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/Voldemort.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/AMQP.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/Rasdaman.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/Elasticsearch.md
+paper:
+  - keyword: TBD
+    title: "Big Data Applications in recommender systems"
+    url: https://github.com/cloudmesh-community/fa18-523-70/tree/master/paper/paper2
+    group: fa18-523-70
+project:
+  - keyword: TV Genome project
+    title: "Big Data Applications in recommender systems"
+    url: https://github.com/cloudmesh-community/fa18-523-70/blob/master/project-report/
+    group: fa18-523-70
+    code: https://github.com/cloudmesh-community/fa18-523-70/tree/master/project-report/project-code
