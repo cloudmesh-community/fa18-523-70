@@ -4,12 +4,12 @@ owner:
   lastname: "Dash"
   hid: "fa18-523-70"
   community: "i523"
-  semester: : "fa18"
-  technologies:
-    - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/voldemort.md
-    - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/amqp.md
-    - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/rasdaman.md
-    - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/elasticsearch.md
+  semester: "fa18"
+technologies:
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/voldemort.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/amqp.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/rasdaman.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/elasticsearch.md
 paper:
   - keyword: TBD
     title: "Big Data Applications in recommender systems"
