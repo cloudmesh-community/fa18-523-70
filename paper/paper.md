@@ -1,5 +1,10 @@
 
-# Big Data Application in recommender systems
+# Big Data Application in recommender systems :smiley: fa18-523-70
+
+| Sushmita Dash
+| sushdash@iu.edu
+| Indiana University
+| hid: fa18-523-70
 
 ## Introduction
 
@@ -16,7 +21,8 @@ There are many daily life examples where we can see the use of the recommender s
 
 A recommendation engine filters the data using different algorithms and recommends the most relevant items to users. It first captures the past behavior of a customer and based on that, recommends products which the users might be likely to buy or watch [@TowardsDataScience].
 Below is a very simple illustration of how recommender systems work in the context of an e-commerce site.
- 
+
+![](images/Picture1.jpg)
 
 Two users buy the same items A and B from an ecommerce store. When this happens the similarity index of these two users is computed. Depending on the score the system can recommend item C to the other user because it detects that those two users are similar in terms of the items they purchase[@datacamp].
 
@@ -26,7 +32,7 @@ Two users buy the same items A and B from an ecommerce store. When this happens 
 A typical recommendation engine processes data through the following four phases namely collection, storing, analyzing and filtering[@analyticsvidhya].
 
 The phases are described below:
-![](/images/Picture1.jpg)
+![](images/Picture2.jpg)
  
 
 1. Collection of Data
@@ -52,7 +58,7 @@ Some of the ways in which we can analyze the data are:
 
 * Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session.
 
-
+![](images/Picture3.jpg)
  
 4. Filtering the data:
 
@@ -66,12 +72,16 @@ After collecting and storing the data, we have to filter it so as to extract the
 
 Data about ratings or interactions can be represented as a set of matrices, with products and users as dimensions. Assume that the following two matrices are similar, but then we deduct the second from the first by replacing existing ratings with the number one and missing ratings by the number zero. The resulting matrix is a truth table where a number one represents an interaction by users with a product.
  
+![](images/Picture4.jpg)
+
 We use K-Nearest algorithm, Jaccard’s coefficient, Dijkstra’s algorithm, cosine similarity to better relate the data sets of people for recommending based on the rating or product.
- 
+
+![](images/Picture5.jpg)
 
 The above graph shows how a k-nearest algorithm’s cluster filtering works.
 Then finally, the result obtained after filtering and using the algorithm, recommendations are given to the user based on the timeliness of the type of recommendation. Whether real time recommendation or sending an email later after some time.
 
+![](images/Picture6.jpg)
  
 ## Types of recommender systems
 
