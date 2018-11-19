@@ -14,11 +14,16 @@ technologies:
 paper:
   - keyword: TBD
     title: "Big Data Applications in recommender systems"
-    url: https://github.com/cloudmesh-community/fa18-523-70/tree/master/paper/paper2
+    url: https://github.com/cloudmesh-community/fa18-523-70/tree/master/paper/paper.md
+    group: fa18-523-70
+References:
+  - keyword: TBD
+    title: "Big Data Applications in recommender systems"
+    url: https://github.com/cloudmesh-community/fa18-523-70/tree/master/paper/paper.bib
     group: fa18-523-70
 project:
   - keyword: TV Genome project
     title: "Big Data Applications in recommender systems"
-    url: https://github.com/cloudmesh-community/fa18-523-70/blob/master/project-report/report.md
+    url: https://github.com/cloudmesh-community/fa18-523-70/tree/master/project-report/report.md
     group: fa18-523-70
-    code: https://github.com/cloudmesh-community/fa18-523-70/tree/master/project-report/project-code
+    code: https://github.com/cloudmesh-community/fa18-523-70/tree/master/project-code/code.pynb
