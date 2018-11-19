@@ -32,6 +32,7 @@ Two users buy the same items A and B from an ecommerce store. When this happens 
 A typical recommendation engine processes data through the following four phases namely collection, storing, analyzing and filtering[@analyticsvidhya].
 
 The phases are described below:
+
 ![](images/Picture2.jpg)
  
 
