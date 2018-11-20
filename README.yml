@@ -26,4 +26,8 @@ project:
     title: "Big Data Applications in recommender systems"
     url: https://github.com/cloudmesh-community/fa18-523-70/tree/master/project-report/report.md
     group: fa18-523-70
-    code: https://github.com/cloudmesh-community/fa18-523-70/tree/master/project-code/code.pynb
+code:
+  - keyword: TV Genome project, Big Data, recommender systems, python
+    title: "Big Data Applications in recommender systems"
+    url: https://github.com/cloudmesh-community/fa18-523-70/blob/master/project-report/code.ipynb
+    group: fa18-523-70
