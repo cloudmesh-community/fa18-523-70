@@ -1,10 +1,11 @@
 
-# Big Data Application in recommender systems :smiley: fa18-523-70
+# Big Data Application in recommender systems :wave: fa18-523-70
 
 | Sushmita Dash
 | sushdash@iu.edu
 | Indiana University
 | hid: fa18-523-70
+| github: see other students papers, or example
 
 ## Introduction
 
