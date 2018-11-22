@@ -50,7 +50,7 @@ The phases are described below:
 
 ![Phases of recommendation engine](images/Picture2.jpg){#fig:fa18-523-70-TowardsDataScience}
 
-1. Collection of Data
+### Collection of Data
 
 The first step in creating a recommendation engine is gathering data. Data can be either explicit or implicit data. Explicit data would consist of data inputted by users such as ratings and comments on products. And implicit data would be the order history/return history, Cart events, Pageviews, Click thru and search log. This data set will be created for every user visiting the site.
 
@@ -58,11 +58,11 @@ Behavior data is easy to collect because you can keep a log of user activities o
 
 Since each user is bound to have different likes or dislikes about a product, their data sets will be distinct. Over time as you ‘feed’ the engine more data, it gets smarter and smarter with its recommendations so that your email subscribers and customers are more likely to engage, click and buy. Just like how the Amazon’s recommendation engine works with the ‘Frequently bought together’ and ‘Recommended for you’ tab.
 
-2. Storing the data:
+### Storing the data:
 
 The more training data is available for the algorithms, better the recommendations will be. This means that any recommendations project can quickly turn into a big data project. The storage of the data depends on whether we are trying to capture user’s input or behavior and on factors such as ease of implementation, size of the data, integration with other systems and portability. We can use noSQL database or a standard SQL database, etc. for data storage. When saving user ratings or comments, a scalable and managed database minimizes the number of tasks required and helps to focus on the recommendation. Cloud SQL fulfills both of these needs and also makes it easy to load the data directly from Spark.
 
-3. Analyzing the data:
+### Analyzing the data:
 
 In order to find items with similar user engagement data, data is filtered using different analysis methods. 
 Some of the ways in which we can analyze the data are:
@@ -75,7 +75,7 @@ Some of the ways in which we can analyze the data are:
 
 ![Simple Algorithm](images/Picture3.jpg){#fig:fa18-523-70-TowardsDataScience}
  
-4. Filtering the data:
+### Filtering the data:
 
 After collecting and storing the data, we have to filter it so as to extract the relevant information required to make the final recommendations. We need to filter the data to get the relevant data necessary to provide recommendations to the user. We have to choose an algorithm that would better suit the recommendation engine. For example
 
