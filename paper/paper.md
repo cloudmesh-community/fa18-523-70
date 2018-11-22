@@ -5,8 +5,8 @@
 | sushdash@iu.edu
 | Indiana University
 | hid: fa18-523-70
-| github: see other students papers, or example
-
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-70/blob/master/paper/paper.md)
+ 
 ## Introduction
 
 In today’s world where people have a very busy lifestyle. They often do not have the time and patience to go through a very vast selection of options available to them. This is applicable in many aspects such as watching TV shows or getting a product online. Here is when our recommendation system comes into play. It plays a critical role in engaging the customers in the online service platforms.
