@@ -25,6 +25,8 @@ Below is a very simple illustration of how recommender systems work in the conte
 
 ![](images/Picture1.jpg)
 
+[@analyticsvidhya]
+
 Two users buy the same items A and B from an ecommerce store. When this happens the similarity index of these two users is computed. Depending on the score the system can recommend item C to the other user because it detects that those two users are similar in terms of the items they purchase[@datacamp].
 
 
@@ -88,6 +90,7 @@ The above graph shows how a k-nearest algorithm’s cluster filtering works.
 Then finally, the result obtained after filtering and using the algorithm, recommendations are given to the user based on the timeliness of the type of recommendation. Whether real time recommendation or sending an email later after some time.
 
 ![](images/Picture6.jpg)
+[@analyticsvidhya]
  
 ## Types of recommender systems
 
