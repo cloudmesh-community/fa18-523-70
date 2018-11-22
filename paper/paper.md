@@ -7,6 +7,14 @@
 | hid: fa18-523-70
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-70/blob/master/paper/paper.md)
  
+:o: image cations are missing
+
+:o: proper citations with labels and refering to the labels in text missing. See the sampel in epub
+
+:o: you have not verified that your paper shows up correct in epub otherwise you would see it
+
+:o: i spend same time to at leas place your citation corerctly in the caption
+
 ## Introduction
 
 In today’s world where people have a very busy lifestyle. They often do not have the time and patience to go through a very vast selection of options available to them. This is applicable in many aspects such as watching TV shows or getting a product online. Here is when our recommendation system comes into play. It plays a critical role in engaging the customers in the online service platforms.
@@ -23,9 +31,9 @@ There are many daily life examples where we can see the use of the recommender s
 A recommendation engine filters the data using different algorithms and recommends the most relevant items to users. It first captures the past behavior of a customer and based on that, recommends products which the users might be likely to buy or watch [@TowardsDataScience].
 Below is a very simple illustration of how recommender systems work in the context of an e-commerce site.
 
-![](images/Picture1.jpg)
+![:o: caption missing [@analyticsvidhya]](images/Picture1.jpg)
 
-[@analyticsvidhya]
+
 
 Two users buy the same items A and B from an ecommerce store. When this happens the similarity index of these two users is computed. Depending on the score the system can recommend item C to the other user because it detects that those two users are similar in terms of the items they purchase[@datacamp].
 
@@ -36,8 +44,8 @@ A typical recommendation engine processes data through the following four phases
 
 The phases are described below:
 
-![](images/Picture2.jpg)
-[@datacamp]
+![:o: caption missing [@datacamp]](images/Picture2.jpg)
+
  
 
 1. Collection of Data
@@ -63,8 +71,8 @@ Some of the ways in which we can analyze the data are:
 
 * Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session.
 
-![](images/Picture3.jpg)
-[@datacamp]
+![:o: caption missing [@datacamp]](images/Picture3.jpg)
+
  
 4. Filtering the data:
 
@@ -78,19 +86,19 @@ After collecting and storing the data, we have to filter it so as to extract the
 
 Data about ratings or interactions can be represented as a set of matrices, with products and users as dimensions. Assume that the following two matrices are similar, but then we deduct the second from the first by replacing existing ratings with the number one and missing ratings by the number zero. The resulting matrix is a truth table where a number one represents an interaction by users with a product.
  
-![](images/Picture4.jpg)
-[@datacamp]
+![:o: caption missing [@datacamp]](images/Picture4.jpg)
+
 
 We use K-Nearest algorithm, Jaccard’s coefficient, Dijkstra’s algorithm, cosine similarity to better relate the data sets of people for recommending based on the rating or product.
 
-![](images/Picture5.jpg)
-[@datacamp]
+![:o: caption missing [@datacamp]](images/Picture5.jpg)
+
 
 The above graph shows how a k-nearest algorithm’s cluster filtering works.
 Then finally, the result obtained after filtering and using the algorithm, recommendations are given to the user based on the timeliness of the type of recommendation. Whether real time recommendation or sending an email later after some time.
 
-![](images/Picture6.jpg)
-[@analyticsvidhya]
+![:o: caption missing [@analyticsvidhya]](images/Picture6.jpg)
+
  
 ## Types of recommender systems
 
