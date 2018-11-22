@@ -37,7 +37,7 @@ There are many daily life examples where we can see the use of the recommender s
 A recommendation engine filters the data using different algorithms and recommends the most relevant items to users. It first captures the past behavior of a customer and based on that, recommends products which the users might be likely to buy or watch [@fa18-523-70-TowardsDataScience].
 Below is a very simple illustration of how recommender systems work in the context of an e-commerce site.
 
-![A simple flow chart](images/from-one-to-the-other.png){#fig:fa18-523-70-TowardsDataScience}
+![A simple flow chart](images/Picture1.png){#fig:fa18-523-70-TowardsDataScience}
 
 Two users buy the same items A and B from an ecommerce store. When this happens the similarity index of these two users is computed. Depending on the score the system can recommend item C to the other user because it detects that those two users are similar in terms of the items they purchase[@fa18-523-70-datacamp].
 
