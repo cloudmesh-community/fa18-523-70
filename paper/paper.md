@@ -35,6 +35,7 @@ A typical recommendation engine processes data through the following four phases
 The phases are described below:
 
 ![](images/Picture2.jpg)
+[@datacamp]
  
 
 1. Collection of Data
@@ -61,6 +62,7 @@ Some of the ways in which we can analyze the data are:
 * Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session.
 
 ![](images/Picture3.jpg)
+[@datacamp]
  
 4. Filtering the data:
 
@@ -75,10 +77,12 @@ After collecting and storing the data, we have to filter it so as to extract the
 Data about ratings or interactions can be represented as a set of matrices, with products and users as dimensions. Assume that the following two matrices are similar, but then we deduct the second from the first by replacing existing ratings with the number one and missing ratings by the number zero. The resulting matrix is a truth table where a number one represents an interaction by users with a product.
  
 ![](images/Picture4.jpg)
+[@datacamp]
 
 We use K-Nearest algorithm, Jaccard’s coefficient, Dijkstra’s algorithm, cosine similarity to better relate the data sets of people for recommending based on the rating or product.
 
 ![](images/Picture5.jpg)
+[@datacamp]
 
 The above graph shows how a k-nearest algorithm’s cluster filtering works.
 Then finally, the result obtained after filtering and using the algorithm, recommendations are given to the user based on the timeliness of the type of recommendation. Whether real time recommendation or sending an email later after some time.
