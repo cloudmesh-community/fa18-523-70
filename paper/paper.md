@@ -104,6 +104,8 @@ Then finally, the result obtained after filtering and using the algorithm, recom
 
 ![Big Data Architecture of Recommendation System](images/Picture6.jpg){#fig:Big Data Architecture of Recommendation System}
 [@fa18-523-70-datacamp]
+
+
 ## Types of recommender systems
 
 Recommender systems are among the most popular applications of data science today[@fa18-523-70-GoogeCloud]. They are used to predict the "rating" or "preference" that a user would give to an item. Almost every major tech company has applied them in some form or the other: Amazon uses it to suggest products to customers, YouTube uses it to decide which video to play next on auto play, and Facebook uses it to recommend pages to like and people to follow. What's more, for some companies -think Netflix and Spotify-, the business model and its success revolves around the potency of their recommendations. In fact, Netflix even offered a million dollars in 2009 to anyone who could improve its system by 10%.
@@ -112,11 +114,56 @@ Recommender systems are among the most popular applications of data science toda
 
 2.	**Content-based recommenders**: suggest similar items based on a particular item. This system uses item metadata, such as genre, director, description, actors, etc. for movies, to make these recommendations. The general idea behind these recommender systems is that if a person liked a particular item, he or she will also like an item that is similar to it.
 
-3.	**Collaborative filtering engines**: these systems try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. Collaborative filters do not require item metadata like its content-based counterparts.
+3.	**Collaborative filtering engines**: these systems try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. Collaborative filters do not require item metadata like its content-based counterparts. Enables users to explore diverse contents, dissimilar to that viewed in the past.
 
-## Architecture
+## Algorithms
+Content based methods are based on similarity of item attributes and collaborative methods calculate similarity from interactions[@fa18-523-70-medium]. Here we discuss few collaborative methods:
+
+### K-Nearest Neighbors
+
+- Computes similarity of users
+- Find k most similar users to user 'a'
+- Recommends movies not seen by user 'a'
+
+The simplest algorithm computes cosine or correlation similarity of rows (users) or columns (items) and recommends items that k — nearest neighbors enjoyed.
+
+### Association Rules
+
+Association rules can also be used for recommendation. Items that are frequently consumed together are connected with an edge in the graph. You can see clusters of best sellers (densely connected items that almost everybody interacted with) and small separated clusters of niche content[@fa18-523-70-medium].
+
+
+### Matrix Factorization
+
+> "Matrix factorization models map both users and items to a joint latent factor space of dimensionality f, such that user-item interactions are modeled as inner products in that space. Accordingly, each item i is associated with a vector qi ∈ Rf
+, and each user u is associated with a vector pu ∈ Rf. For a given item i, the elements of qi  measure the extent to which the item possesses those factors, positive or negative. For a given user u, the elements of pu  measure the extent of interest the user has in items that are high on the corresponding factors, again, positive or negative. The resulting dot product,
+qi T  pu, captures the interaction between user u and item i—the user’s overall interest in the item’s characteristics. This approximates user u’s rating of item i, which is denoted by rui, leading to the estimate [@fa18-523-70-datajobs]."
+
+Most popular training algorithm is a stochastic gradient descent (SGD) minimizing loss by gradient updates of both columns and rows of p a q matrices. SGD updates each parameter independently. Derive the loss function wrt each parameter.
+
+
+
+### Deep Neural Networks
+
+Rating matrix can be also compressed by a neural network. So called autoencoder is very similar to the matrix factorization. Deep autoencoders, with multiple hidden layers and nonlinearities are more powerful but harder to train. Neural net can be also used to preprocess item attributes so we can combine content based and collaborative approaches.
+
+![Neural Networks](images/Picture7.jpg){#fig: Neural Networks}
+[@fa18-523-70-medium]
+
+
+## Evaluation of recommender systems
+
+
+### Validation of Recommender System
+
+### Root mean squared error
+
+### Top N Recommendations
+
 
 ## Conclusion
 
+
+
 ## Acknowledgement
 
+I am thankful to Dr Gregor Von Laszewski to help me complete the project and the paper for the Big Data Applications and Analytics course
