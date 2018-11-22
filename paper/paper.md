@@ -6,6 +6,12 @@
 | Indiana University
 | hid: fa18-523-70
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-70/blob/master/paper/paper.md)
+
+---
+
+Keywords: recommender system, TV genome, KNN classification
+
+---
  
 :o: image cations are missing
 
