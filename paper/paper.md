@@ -28,23 +28,23 @@ There are many daily life examples where we can see the use of the recommender s
 
 ## What is a recommender system?
 
-A recommendation engine filters the data using different algorithms and recommends the most relevant items to users. It first captures the past behavior of a customer and based on that, recommends products which the users might be likely to buy or watch [@TowardsDataScience].
+A recommendation engine filters the data using different algorithms and recommends the most relevant items to users. It first captures the past behavior of a customer and based on that, recommends products which the users might be likely to buy or watch [@fa18-523-70-TowardsDataScience].
 Below is a very simple illustration of how recommender systems work in the context of an e-commerce site.
 
-![:o: caption missing [@analyticsvidhya]](images/Picture1.jpg)
+![:o: caption missing [@fa18-523-70-analyticsvidhya]](images/Picture1.jpg)
 
 
 
-Two users buy the same items A and B from an ecommerce store. When this happens the similarity index of these two users is computed. Depending on the score the system can recommend item C to the other user because it detects that those two users are similar in terms of the items they purchase[@datacamp].
+Two users buy the same items A and B from an ecommerce store. When this happens the similarity index of these two users is computed. Depending on the score the system can recommend item C to the other user because it detects that those two users are similar in terms of the items they purchase[@fa18-523-70-datacamp].
 
 
 ## How does the recommender system work?
 
-A typical recommendation engine processes data through the following four phases namely collection, storing, analyzing and filtering[@analyticsvidhya].
+A typical recommendation engine processes data through the following four phases namely collection, storing, analyzing and filtering[@fa18-523-70-analyticsvidhya].
 
 The phases are described below:
 
-![:o: caption missing [@datacamp]](images/Picture2.jpg)
+![:o: caption missing [@fa18-523-70-datacamp]](images/Picture2.jpg)
 
  
 
@@ -71,7 +71,7 @@ Some of the ways in which we can analyze the data are:
 
 * Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session.
 
-![:o: caption missing [@datacamp]](images/Picture3.jpg)
+![:o: caption missing [@fa18-523-70-datacamp]](images/Picture3.jpg)
 
  
 4. Filtering the data:
@@ -86,23 +86,23 @@ After collecting and storing the data, we have to filter it so as to extract the
 
 Data about ratings or interactions can be represented as a set of matrices, with products and users as dimensions. Assume that the following two matrices are similar, but then we deduct the second from the first by replacing existing ratings with the number one and missing ratings by the number zero. The resulting matrix is a truth table where a number one represents an interaction by users with a product.
  
-![:o: caption missing [@datacamp]](images/Picture4.jpg)
+![:o: caption missing [@fa18-523-70-datacamp]](images/Picture4.jpg)
 
 
 We use K-Nearest algorithm, Jaccard’s coefficient, Dijkstra’s algorithm, cosine similarity to better relate the data sets of people for recommending based on the rating or product.
 
-![:o: caption missing [@datacamp]](images/Picture5.jpg)
+![:o: caption missing [@fa18-523-70-datacamp]](images/Picture5.jpg)
 
 
 The above graph shows how a k-nearest algorithm’s cluster filtering works.
 Then finally, the result obtained after filtering and using the algorithm, recommendations are given to the user based on the timeliness of the type of recommendation. Whether real time recommendation or sending an email later after some time.
 
-![:o: caption missing [@analyticsvidhya]](images/Picture6.jpg)
+![:o: caption missing [@fa18-523-70-analyticsvidhya]](images/Picture6.jpg)
 
  
 ## Types of recommender systems
 
-Recommender systems are among the most popular applications of data science today[@GoogeCloud]. They are used to predict the "rating" or "preference" that a user would give to an item. Almost every major tech company has applied them in some form or the other: Amazon uses it to suggest products to customers, YouTube uses it to decide which video to play next on auto play, and Facebook uses it to recommend pages to like and people to follow. What's more, for some companies -think Netflix and Spotify-, the business model and its success revolves around the potency of their recommendations. In fact, Netflix even offered a million dollars in 2009 to anyone who could improve its system by 10%.
+Recommender systems are among the most popular applications of data science today[@fa18-523-70-GoogeCloud]. They are used to predict the "rating" or "preference" that a user would give to an item. Almost every major tech company has applied them in some form or the other: Amazon uses it to suggest products to customers, YouTube uses it to decide which video to play next on auto play, and Facebook uses it to recommend pages to like and people to follow. What's more, for some companies -think Netflix and Spotify-, the business model and its success revolves around the potency of their recommendations. In fact, Netflix even offered a million dollars in 2009 to anyone who could improve its system by 10%.
 1.	Simple recommenders: offer generalized recommendations to every user, based on movie popularity and/or genre. The basic idea behind this system is that movies that are more popular and critically acclaimed will have a higher probability of being liked by the average audience. IMDB Top 250 is an example of this system.
 2.	Content-based recommenders: suggest similar items based on a particular item. This system uses item metadata, such as genre, director, description, actors, etc. for movies, to make these recommendations. The general idea behind these recommender systems is that if a person liked a particular item, he or she will also like an item that is similar to it.
 3.	Collaborative filtering engines: these systems try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. Collaborative filters do not require item metadata like its content-based counterparts.
