@@ -1,5 +1,5 @@
 
-# Big Data Application in recommender systems :wave: :exclamation: fa18-523-70
+# Big Data Application in recommender systems :smiley: :exclamation: fa18-523-70
 
 | Sushmita Dash
 | sushdash@iu.edu
@@ -12,14 +12,7 @@
 Keywords: recommender system, TV genome, KNN classification
 
 ---
- 
-:o: image cations are missing
 
-:o: proper citations with labels and refering to the labels in text missing. See the sampel in epub
-
-:o: you have not verified that your paper shows up correct in epub otherwise you would see it
-
-:o: i spend same time to at leas place your citation corerctly in the caption
 
 ## Introduction
 
