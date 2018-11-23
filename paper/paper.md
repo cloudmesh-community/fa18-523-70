@@ -152,17 +152,29 @@ Rating matrix can be also compressed by a neural network. So called autoencoder 
 
 ## Evaluation of recommender systems
 
+Few methods how the accuracy of a recommender system can be evaluated are as follows:
+
 
 ### Validation of Recommender System
 
+- Recommenders can be evaluated similarly as classical machine learning models on historical data
+- Users are divided into:
+  * Training set - This is fully submitted to the recommender system
+  * Testing set - This is submitted partially and used to evaluate the recommender
+
 ### Root mean squared error
+
+- When some obeserved data is provided,the recommender system is to predict the rating of an unknown user-item pair
+
+> "The root-mean-square deviation (RMSD) or root-mean-square error (RMSE) (or sometimes root-mean-squared error) is a frequently used measure of the differences between values (sample or population values) predicted by a model or an estimator and the values observed. The RMSD represents the square root of the second sample moment of the differences between predicted values and observed values or the quadratic mean of these differences[@fa18-523-70-wiki]."
+
+![RMSE formula](images/rmse.png){#fig: RMSE Formula}
 
 ### Top N Recommendations
 
+> "The explosive growth of the world-wide-web and the emergence of e-commerce has led to the development of recommender systems---a personalized information filtering technology used to identify a set of N items that will be of interest to a certain user. User-based Collaborative filtering is the most successful technology for building recommender systems to date, and is extensively used in many commercial recommender systems. Unfortunately, the computational complexity of these methods grows linearly with the number of customers that in typical commercial applications can grow to be several millions. To address these scalability concerns item-based recommendation techniques have been developed that analyze the user-item matrix to identify relations between the different items, and use these relations to compute the list of recommendations.In this paper we present one such class of item-based recommendation algorithms that first determine the similarities between the various items and then used them to identify the set of items to be recommended. The key steps in this class of algorithms are (i) the method used to compute the similarity between the items, and (ii) the method used to combine these similarities in order to compute the similarity between a basket of items and a candidate recommender item. Our experimental evaluation on five different datasets show that the proposed item-based algorithms are up to 28 times faster than the traditional user-neighborhood based recommender systems and provide recommendations whose quality is up to 27% better[@fa18-523-70-semanticsscholar]."
 
-## Conclusion
-
-
+![TopNRecommendationformula](images/TopNRecommendation.png){#fig: TopNRecommendationformula}
 
 ## Acknowledgement
 
