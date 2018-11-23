@@ -146,7 +146,7 @@ Most popular training algorithm is a stochastic gradient descent (SGD) minimizin
 
 Rating matrix can be also compressed by a neural network. So called autoencoder is very similar to the matrix factorization. Deep autoencoders, with multiple hidden layers and nonlinearities are more powerful but harder to train. Neural net can be also used to preprocess item attributes so we can combine content based and collaborative approaches.
 
-![Neural Networks](images/Picture7.jpg){#fig: Neural Networks}
+![Neural Networks](images/Picture7.png){#fig: Neural Networks}
 [@fa18-523-70-medium]
 
 
