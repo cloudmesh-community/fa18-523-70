@@ -30,8 +30,8 @@ There are many daily life examples where we can see the use of the recommender s
 A recommendation engine filters the data using different algorithms and recommends the most relevant items to users. It first captures the past behavior of a customer and based on that, recommends products which the users might be likely to buy or watch [@fa18-523-70-TowardsDataScience].
 Below is a very simple illustration of how recommender systems work in the context of an e-commerce site.
 
-![A simple recommender system analogy](images/Picture1.jpg){#fig:A simple recommender system analogy}
-[@fa18-523-70-TowardsDataScience]
+![A simple recommender system analogy [@fa18-523-70-TowardsDataScience]](images/Picture1.jpg){#fig:A simple recommender system analogy}
+
 
 Two users buy the same items A and B from an ecommerce store. When this happens the similarity index of these two users is computed. Depending on the score the system can recommend item C to the other user because it detects that those two users are similar in terms of the items they purchase[@fa18-523-70-datacamp].
 
@@ -42,8 +42,7 @@ A typical recommendation engine processes data through the following four phases
 
 The phases are described below:
 
-![Phases of recommendation engine](images/Picture2.jpg){#fig:Phases of recommendation engine]}
-[@fa18-523-70-TowardsDataScience]
+![Phases of recommendation engine [@fa18-523-70-TowardsDataScience]](images/Picture2.jpg){#fig:Phases of recommendation engine]}
 
 ### Collection of Data
 
@@ -68,8 +67,7 @@ Some of the ways in which we can analyze the data are:
 
 * Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session.
 
-![Simple Algorithm](images/Picture3.jpg){#fig:Simple Algorithm}
-[@fa18-523-70-TowardsDataScience]
+![Simple Algorithm [@fa18-523-70-TowardsDataScience]](images/Picture3.jpg){#fig:Simple Algorithm}
  
 ### Filtering the data:
 
@@ -83,20 +81,20 @@ After collecting and storing the data, we have to filter it so as to extract the
 
 Data about ratings or interactions can be represented as a set of matrices, with products and users as dimensions. Assume that the following two matrices are similar, but then we deduct the second from the first by replacing existing ratings with the number one and missing ratings by the number zero. The resulting matrix is a truth table where a number one represents an interaction by users with a product.
 
-![Rating Matrix](images/Picture4.jpg){#fig:Rating Matrix}
+![Rating Matrix [@fa18-523-70-TowardsDataScience]](images/Picture4.jpg){#fig:Rating Matrix}
 
-[@fa18-523-70-TowardsDataScience]
+
 
 We use K-Nearest algorithm, Jaccard’s coefficient, Dijkstra’s algorithm, cosine similarity to better relate the data sets of people for recommending based on the rating or product.
 
-![K-Nearest algorithm](images/Picture5.jpg){#fig:K-Nearest algorithm}
-[@fa18-523-70-TowardsDataScience]
+![K-Nearest algorithm [@fa18-523-70-TowardsDataScience]](images/Picture5.jpg){#fig:K-Nearest algorithm}
+
 
 The above graph shows how a k-nearest algorithm’s cluster filtering works.
 Then finally, the result obtained after filtering and using the algorithm, recommendations are given to the user based on the timeliness of the type of recommendation. Whether real time recommendation or sending an email later after some time.
 
-![Big Data Architecture of Recommendation System](images/Picture6.jpg){#fig:Big Data Architecture of Recommendation System}
-[@fa18-523-70-datacamp]
+![Big Data Architecture of Recommendation System [@fa18-523-70-datacamp]](images/Picture6.jpg){#fig:Big Data Architecture of Recommendation System}
+
 
 
 ## Types of recommender systems
@@ -133,6 +131,7 @@ qi T  pu, captures the interaction between user u and item i—the user’s over
 
 Most popular training algorithm is a stochastic gradient descent (SGD) minimizing loss by gradient updates of both columns and rows of p a q matrices. SGD updates each parameter independently. Derive the loss function wrt each parameter.
 
+:o: math is done differently in markdown please look up manual
 
 
 ### Deep Neural Networks
@@ -163,11 +162,13 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 
 ![RMSE formula](images/rmse.png){#fig: RMSE Formula}
 
+:o: figure labels must not have spaces
+
 ### Top N Recommendations
 
 > "The explosive growth of the world-wide-web and the emergence of e-commerce has led to the development of recommender systems---a personalized information filtering technology used to identify a set of N items that will be of interest to a certain user. User-based Collaborative filtering is the most successful technology for building recommender systems to date, and is extensively used in many commercial recommender systems. Unfortunately, the computational complexity of these methods grows linearly with the number of customers that in typical commercial applications can grow to be several millions. To address these scalability concerns item-based recommendation techniques have been developed that analyze the user-item matrix to identify relations between the different items, and use these relations to compute the list of recommendations.In this paper we present one such class of item-based recommendation algorithms that first determine the similarities between the various items and then used them to identify the set of items to be recommended. The key steps in this class of algorithms are (i) the method used to compute the similarity between the items, and (ii) the method used to combine these similarities in order to compute the similarity between a basket of items and a candidate recommender item. Our experimental evaluation on five different datasets show that the proposed item-based algorithms are up to 28 times faster than the traditional user-neighborhood based recommender systems and provide recommendations whose quality is up to 27% better[@fa18-523-70-semanticsscholar]."
 
-![TopNRecommendationformula](images/TopNRecommendation.png){#fig: TopNRecommendationformula}
+![TopNRecommendationformula](images/TopNRecommendation.png){#fig:TopNRecommendationformula}
 
 ## Acknowledgement
 
