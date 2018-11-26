@@ -1,5 +1,5 @@
 
-# Big Data Application in recommender systems :smiley: :exclamation: fa18-523-70
+# Big Data Application in recommender systems :wave: :exclamation: :exclamation: fa18-523-70
 
 | Sushmita Dash
 | sushdash@iu.edu
