@@ -1,5 +1,5 @@
 
-# Big Data Application in recommender systems :wave: :exclamation: :exclamation: fa18-523-70
+# Big Data Application in recommender systems :wave: :exclamation: :exclamation: :exclamation: fa18-523-70
 
 | Sushmita Dash
 | sushdash@iu.edu
@@ -10,6 +10,10 @@
 :o: labels must not have spaces, mentioned before
 
 :o: headlines must not have colons, mentioned before
+
+:o: all math formulas can be done in markdown and not as image
+
+:o: one of the images is mostly text and thus it shoudl be done as text and not image
 
 ---
 
