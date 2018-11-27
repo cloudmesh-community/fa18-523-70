@@ -9,6 +9,8 @@
 
 :o: labels must not have spaces, mentioned before
 
+:o: headlines must not have colons, mentioned before
+
 ---
 
 Keywords: recommender system, TV genome, KNN classification
