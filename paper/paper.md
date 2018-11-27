@@ -7,6 +7,8 @@
 | hid: fa18-523-70
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-70/blob/master/paper/paper.md)
 
+:o: labels must not have spaces, mentioned before
+
 ---
 
 Keywords: recommender system, TV genome, KNN classification
