@@ -8,6 +8,7 @@
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-70/blob/master/project-report/report.md)
 
 :o: pleaseuse math as defined in pandoc and not images for it
+:o: poor quality images at times, even if image not needed, use ascii, markdown for text
 
 ---
 
