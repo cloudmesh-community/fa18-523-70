@@ -7,7 +7,6 @@
 | hid: fa18-523-70
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-70/blob/master/project-report/report.md)
 
-:o: all images missing
 
 ---
 
