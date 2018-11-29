@@ -1,11 +1,13 @@
 
-# Big Data Application in recommender systems :smiley: :exclamation: fa18-523-70
+# Big Data Application in Recommender Systems :wave: :exclamation: fa18-523-70
 
 | Sushmita Dash
 | sushdash@iu.edu
 | Indiana University
 | hid: fa18-523-70
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-70/blob/master/project-report/report.md)
+
+:o: all images missing
 
 ---
 
