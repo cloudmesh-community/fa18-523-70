@@ -38,7 +38,7 @@ There are many daily life examples where we can see the use of the recommender s
 A recommendation engine filters the data using different algorithms and recommends the most relevant items to users. It first captures the past behavior of a customer and based on that, recommends products which the users might be likely to buy or watch [@fa18-523-70-TowardsDataScience].
 Below is a very simple illustration of how recommender systems work in the context of an e-commerce site.
 
-![A simple recommender system analogy [@fa18-523-70-TowardsDataScience]](images/Picture1.jpg){#fig:A simple recommender system analogy}
+![Simple Recommender System[@fa18-523-70-TowardsDataScience]](images/Picture1.jpg){#fig:SimpleRecommenderSystemAnalogy}
 
 
 Two users buy the same items A and B from an ecommerce store. When this happens the similarity index of these two users is computed. Depending on the score the system can recommend item C to the other user because it detects that those two users are similar in terms of the items they purchase[@fa18-523-70-datacamp].
@@ -50,7 +50,7 @@ A typical recommendation engine processes data through the following four phases
 
 The phases are described below:
 
-![Phases of recommendation engine [@fa18-523-70-TowardsDataScience]](images/Picture2.jpg){#fig:Phases of recommendation engine]}
+![Phases of recommendation engine [@fa18-523-70-TowardsDataScience]](images/Picture2.jpg){#fig:PhasesOfRecommendationEngine]}
 
 ### Collection of Data
 
@@ -60,11 +60,11 @@ Behavior data is easy to collect because you can keep a log of user activities o
 
 Since each user is bound to have different likes or dislikes about a product, their data sets will be distinct. Over time as you ‘feed’ the engine more data, it gets smarter and smarter with its recommendations so that your email subscribers and customers are more likely to engage, click and buy. Just like how the Amazon’s recommendation engine works with the ‘Frequently bought together’ and ‘Recommended for you’ tab.
 
-### Storing the data:
+### Storing the data
 
 The more training data is available for the algorithms, better the recommendations will be. This means that any recommendations project can quickly turn into a big data project. The storage of the data depends on whether we are trying to capture user’s input or behavior and on factors such as ease of implementation, size of the data, integration with other systems and portability. We can use noSQL database or a standard SQL database, etc. for data storage. When saving user ratings or comments, a scalable and managed database minimizes the number of tasks required and helps to focus on the recommendation. Cloud SQL fulfills both of these needs and also makes it easy to load the data directly from Spark.
 
-### Analyzing the data:
+### Analyzing the data
 
 In order to find items with similar user engagement data, data is filtered using different analysis methods. 
 Some of the ways in which we can analyze the data are:
@@ -75,9 +75,20 @@ Some of the ways in which we can analyze the data are:
 
 * Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session.
 
-![Simple Algorithm [@fa18-523-70-TowardsDataScience]](images/Picture3.jpg){#fig:Simple Algorithm}
+**Algorithm:**
+</br> for each item in product catalog, I<sub>1</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	for each customer C who purchased I<sub>1</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				for each item I<sub>2</sub> purchased by customer C<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;					Record that a customer purchased I<sub>1</sub> and I<sub>2</sub><br/>
+for each item I<sub>2</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;		compute the similarity between I<sub>1</sub> and I<sub>2</sub><br/>
+
+**Algorithm Complexity:**
+- Worst Case: O(N<sup>2</sup>M)
+- In practice: O(NM), cause customers have fewer purchases
+
  
-### Filtering the data:
+### Filtering the data
 
 After collecting and storing the data, we have to filter it so as to extract the relevant information required to make the final recommendations. We need to filter the data to get the relevant data necessary to provide recommendations to the user. We have to choose an algorithm that would better suit the recommendation engine. For example
 
@@ -89,19 +100,19 @@ After collecting and storing the data, we have to filter it so as to extract the
 
 Data about ratings or interactions can be represented as a set of matrices, with products and users as dimensions. Assume that the following two matrices are similar, but then we deduct the second from the first by replacing existing ratings with the number one and missing ratings by the number zero. The resulting matrix is a truth table where a number one represents an interaction by users with a product.
 
-![Rating Matrix [@fa18-523-70-TowardsDataScience]](images/Picture4.jpg){#fig:Rating Matrix}
+![Rating Matrix [@fa18-523-70-TowardsDataScience]](images/Picture4.jpg){#fig:RatingMatrix}
 
 
 
 We use K-Nearest algorithm, Jaccard’s coefficient, Dijkstra’s algorithm, cosine similarity to better relate the data sets of people for recommending based on the rating or product.
 
-![K-Nearest algorithm [@fa18-523-70-TowardsDataScience]](images/Picture5.jpg){#fig:K-Nearest algorithm}
+![K Nearest algorithm [@fa18-523-70-TowardsDataScience]](images/Picture5.jpg){#fig:KNearestAlgorithm}
 
 
 The above graph shows how a k-nearest algorithm’s cluster filtering works.
 Then finally, the result obtained after filtering and using the algorithm, recommendations are given to the user based on the timeliness of the type of recommendation. Whether real time recommendation or sending an email later after some time.
 
-![Big Data Architecture of Recommendation System [@fa18-523-70-datacamp]](images/Picture6.jpg){#fig:Big Data Architecture of Recommendation System}
+![Big Data Architecture Of Recommendation System [@fa18-523-70-datacamp]](images/Picture6.jpg){#fig:BigDataArchitectureOfRecommendationSystem}
 
 
 
@@ -146,9 +157,16 @@ Most popular training algorithm is a stochastic gradient descent (SGD) minimizin
 
 Rating matrix can be also compressed by a neural network. So called autoencoder is very similar to the matrix factorization. Deep autoencoders, with multiple hidden layers and nonlinearities are more powerful but harder to train. Neural net can be also used to preprocess item attributes so we can combine content based and collaborative approaches.
 
-![Neural Networks](images/Picture7.png){#fig: Neural Networks}
+![Neural Networks](images/Picture7.png){#fig: NeuralNetworks}
 [@fa18-523-70-medium]
 
+$$\phi : X -> Z : x -> \phi(x) = \sigma(Wx + b) := z <\br>
+\Phi : Z -> Z : z -> \Phi(z) = \sigma(\bar{W}z + \bar{b}) : = x\prime <\br>
+
+L(x,x\prime) = \sum_{i=1}^{n} || x_i - x\prime_i ||^2 <\br>
+ = \sum_{i=1}^{n} || x_i - \sigma(Wz_i + b)||^2
+ = \sum_{i=1}^{n} || x_i - \sigma(W(\bar{W}x_i + b )+ \bar{b})||^2
+$$
 
 ## Evaluation of recommender systems
 
@@ -167,8 +185,8 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 - When some obeserved data is provided,the recommender system is to predict the rating of an unknown user-item pair
 
 > "The root-mean-square deviation (RMSD) or root-mean-square error (RMSE) (or sometimes root-mean-squared error) is a frequently used measure of the differences between values (sample or population values) predicted by a model or an estimator and the values observed. The RMSD represents the square root of the second sample moment of the differences between predicted values and observed values or the quadratic mean of these differences[@fa18-523-70-wiki]."
-
-![RMSE formula](images/rmse.png){#fig: RMSE Formula}
+![equation](images/rmse.png)
+![RMSE formula](images/rmse.png){#fig: RMSEFormula}
 
 :o: figure labels must not have spaces
 
@@ -176,7 +194,7 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 
 > "The explosive growth of the world-wide-web and the emergence of e-commerce has led to the development of recommender systems---a personalized information filtering technology used to identify a set of N items that will be of interest to a certain user. User-based Collaborative filtering is the most successful technology for building recommender systems to date, and is extensively used in many commercial recommender systems. Unfortunately, the computational complexity of these methods grows linearly with the number of customers that in typical commercial applications can grow to be several millions. To address these scalability concerns item-based recommendation techniques have been developed that analyze the user-item matrix to identify relations between the different items, and use these relations to compute the list of recommendations.In this paper we present one such class of item-based recommendation algorithms that first determine the similarities between the various items and then used them to identify the set of items to be recommended. The key steps in this class of algorithms are (i) the method used to compute the similarity between the items, and (ii) the method used to combine these similarities in order to compute the similarity between a basket of items and a candidate recommender item. Our experimental evaluation on five different datasets show that the proposed item-based algorithms are up to 28 times faster than the traditional user-neighborhood based recommender systems and provide recommendations whose quality is up to 27% better[@fa18-523-70-semanticsscholar]."
 
-![TopNRecommendationformula](images/TopNRecommendation.png){#fig:TopNRecommendationformula}
+![Top N Recommendation formula](images/TopNRecommendation.png){#fig:TopNRecommendationformula}
 
 ## Acknowledgement
 
