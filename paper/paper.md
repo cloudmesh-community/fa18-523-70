@@ -142,8 +142,6 @@ qi T  pu, captures the interaction between user u and item i—the user’s over
 
 Most popular training algorithm is a stochastic gradient descent (SGD) minimizing loss by gradient updates of both columns and rows of p a q matrices. SGD updates each parameter independently. Derive the loss function wrt each parameter.
 
-:o: math is done differently in markdown please look up manual
-
 
 ### Deep Neural Networks
 
