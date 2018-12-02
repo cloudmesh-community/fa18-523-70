@@ -74,17 +74,17 @@ Some of the ways in which we can analyze the data are:
 :o: just use verbatim, dont make it complex
 
 ```
-</br> for each item in product catalog, I<sub>1</sub><br/>
-for each customer C who purchased I<sub>1</sub><br/>
- for each item I<sub>2</sub> purchased by customer C<br/>
-			Record that a customer purchased I<sub>1</sub> and I<sub>2</sub><br/>
-for each item I<sub>2</sub><br/>
- compute the similarity between I<sub>1</sub> and I<sub>2</sub><br/>
+for each item in product catalog, I<sub>1</sub>
+  for each customer C who purchased I<sub>1</sub>
+    for each item I<sub>2</sub> purchased by customer C
+ 	Record that a customer purchased I<sub>1</sub> and I<sub>2</sub>
+for each item I<sub>2</sub>
+ compute the similarity between I<sub>1</sub> and I<sub>2</sub>
 ```
 
 **Algorithm Complexity:**
 
-- Worst Case: O(N<sub>2 * M) :o: check
+- Worst Case: O(N<sup>2</sub> * M) :o: check
 - In practice: O(N * M), cause customers have fewer purchases
 
  
