@@ -67,17 +67,25 @@ Some of the ways in which we can analyze the data are:
 
 * Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session.
 
+:o: citation missing
+
 **Algorithm:**
+
+:o: just use verbatim, dont make it complex
+
+```
 </br> for each item in product catalog, I<sub>1</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	for each customer C who purchased I<sub>1</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				for each item I<sub>2</sub> purchased by customer C<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;					Record that a customer purchased I<sub>1</sub> and I<sub>2</sub><br/>
 for each item I<sub>2</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;		compute the similarity between I<sub>1</sub> and I<sub>2</sub><br/>
+```
 
 **Algorithm Complexity:**
-- Worst Case: O(N<sup>2</sup>M)
-- In practice: O(NM), cause customers have fewer purchases
+
+- Worst Case: O(N**2 * M) :o: check
+- In practice: O(N * M), cause customers have fewer purchases
 
  
 ### Filtering the data
