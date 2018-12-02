@@ -65,26 +65,25 @@ Some of the ways in which we can analyze the data are:
 
 * Batch analysis demands you to process the data periodically. This approach implies that enough data needs to be created in order to make the analysis relevant, such as daily sales volume. A batch system might work fine to send an e-mail at a later date.
 
-* Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session.
+* Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session[@fa18-523-70-analyticsvidhya].
 
-:o: citation missing
+
 
 **Algorithm:**
 
-:o: just use verbatim, dont make it complex
 
 ```
-for each item in product catalog, I<sub>1</sub>
-  for each customer C who purchased I<sub>1</sub>
-    for each item I<sub>2</sub> purchased by customer C
- 	Record that a customer purchased I<sub>1</sub> and I<sub>2</sub>
-for each item I<sub>2</sub>
- compute the similarity between I<sub>1</sub> and I<sub>2</sub>
-```
+for each item in product catalog, I1
+  for each customer C who purchased I1
+    for each item I2 purchased by customer C
+ 	Record that a customer purchased I1 and I2
+for each item I2
+ compute the similarity between I1 and I2
+ ```
 
 **Algorithm Complexity:**
 
-- Worst Case: O(N<sup>2</sub> * M) :o: check
+- Worst Case: O(N<sup>2</sup> * M) 
 - In practice: O(N * M), cause customers have fewer purchases
 
  
