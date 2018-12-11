@@ -3,24 +3,25 @@ owner:
   firstname: "Sushmita"
   lastname: "Dash"
   hid: "fa18-523-70"
-  community: "i523"
-  semester: fa18
-  profile: https://github.com/sushmitadash
+  semester: "fa18"
+  course: "Big Data Applications and Analytics"
+  online: "Yes"
+  
+notebook:
+ -url: https://github.com/cloudmesh-community/fa18-523-70/blob/master/notebook.md 
+
 technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/voldemort.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/amqp.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/rasdaman.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/elasticsearch.md
+  
 paper:
   - keyword: Big Data, recommender systems, python
     title: "Big Data Applications in recommender systems"
     url: https://github.com/cloudmesh-community/fa18-523-70/tree/master/paper/paper.md
     group: fa18-523-70
-References:
-  - keyword: Big Data, recommender systems, python
-    title: "Big Data Applications in recommender systems"
-    url: https://github.com/cloudmesh-community/fa18-523-70/tree/master/paper/paper.bib
-    group: fa18-523-70
+
 project:
   - keyword: TV Genome project, Big Data, recommender systems, python
     title: "Big Data Applications in recommender systems"
