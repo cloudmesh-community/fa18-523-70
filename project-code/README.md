@@ -17,6 +17,7 @@ genome-scores.csv
 genome-tags.csv
 
 For the purpose of this project, we will use movies.csv and ratings.csv files only.
+The above site also contains a smaller dataset containing 100,000 ratings and 3,600 tag applications applied to 9,000 movies by 600 users which we will use for the project
 
 
 ## Requirements
