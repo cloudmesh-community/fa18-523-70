@@ -165,7 +165,10 @@ Association rules can also be used for recommendation. Items that are frequently
 
 Firstly, we have a set U of users, and a set D of items. Let *R* of size |U| X |D| be the matrix that contains all the ratings that the users have assigned to the items. Also, we assume that we would like to discover $K$ latent features. 
 Our task, then, is to find two matrics matrices **P** (a |U| X K matrix) and **Q** (a |D| X K matrix) such that their product approximates **R**:
-		**R = P x Q<sup>T</sup> = R'**
+
+```
+		R = P x Q<sup>T</sup> = R'
+```
 
 In this way, each row of **P** would represent the strength of the associations between a user and the features. Similarly, each row of **Q** would represent the strength of the associations between an item and the features.
 
@@ -190,9 +193,6 @@ Rating matrix can be also compressed by a neural network. So called autoencoder 
 ![Neural Networks](../paper/images/Picture8.png){#fig: NeuralNetworks}
 [@fa18-523-70-medium]
 
-:o: illegal citation, must be in caption
-
-:o: illegal image can not have http in it
 
 ![Neural Networks Formula](../paper/images/Neuralnetwork.png){#fig:NeuralNetworksFormula}
 
