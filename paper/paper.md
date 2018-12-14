@@ -349,9 +349,9 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 > better[@fa18-523-70-semanticsscholar]."
 
 :o: illegal image
-```
+
 ![Top N Recommendation equation](https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cnewline%20%5Cmathbf%7BPrecision%20%5C%3B%20on%20%5C%3B%20Top-N%7D%3A%20Precision%28u%29%20%3D%20%5Cfrac%7B%7CRecommended%28u%29%20%5Cbigcap%20Testing%28u%29%7C%7D%7B%7CRecommended%28u%29%7C%7D%20%5Cnewline%20%5Cmathbf%7BRecall%20%5C%3Bon%20%5C%3B%20Top-N%3A%7D%20%5C%3B%20Recall%28u%29%20%3D%20%5Cfrac%7B%7CRecommended%28u%29%20%5Cbigcap%20Testing%28u%29%7C%7D%7B%7CTesting%28u%29%7C%7D%20%5Cnewline%20%5Cmathbf%7BSerendipity%2C%20DCG%3A%7D%20%5C%3B%20DCG%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bp%7D%20%5Cfrac%7B2%5E%7Brel_i%7D-1%7D%7Blog_2%28i&plus;1%29%7D)
-```
+
 ## Acknowledgement
 
 I am thankful to Dr Gregor Von Laszewski to help me complete the project and the paper for the Big Data Applications and Analytics course
