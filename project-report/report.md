@@ -75,7 +75,6 @@ Some of the ways in which we can analyze the data are:
 
 * Near-real-time analysis lets you gather data quickly so you can refresh the analytics every few minutes or seconds. A near-real-time system works best for providing recommendations during the same browsing session.
 
-:o: the algorithm is not in markdown but in html we need to avoid this
 
 **Algorithm:**
 
