@@ -167,9 +167,9 @@ Rating matrix can be also compressed by a neural network. So called autoencoder 
 
 :o: illegal image can not have http in it
 
-```
+
 ![Neural Network Equation](https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cnewline%20%5Cphi%20%3A%20X%20-%3E%20Z%20%3A%20x%20-%3E%20%5Cphi%28x%29%20%3D%20%5Csigma%28Wx%20&plus;%20b%29%20%3A%3D%20z%20%5Cnewline%20%5CPhi%20%3A%20Z%20-%3E%20Z%20%3A%20z%20-%3E%20%5CPhi%28z%29%20%3D%20%5Csigma%28%5Cbar%7BW%7Dz%20&plus;%20%5Cbar%7Bb%7D%29%20%3A%20%3D%20x%5Cprime%20%5Cnewline%20L%28x%2Cx%5Cprime%29%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20%7C%7C%20x_i%20-%20x%5Cprime_i%20%7C%7C%5E2%20%5Cnewline%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20%7C%7C%20x_i%20-%20%5Csigma%28Wz_i%20&plus;%20b%29%7C%7C%5E2%20%5Cnewline%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20%7C%7C%20x_i%20-%20%5Csigma%28W%28%5Cbar%7BW%7Dx_i%20&plus;%20b%20%29&plus;%20%5Cbar%7Bb%7D%29%7C%7C%5E2)
-```
+
 
 
 ## Evaluation of recommender systems
@@ -192,9 +192,9 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 
 :o: illegal image
 
-```
+
 ![RMSE equation](https://latex.codecogs.com/gif.latex?%5Clarge%20RMSE%28model%29%20%3D%20%5Csqrt%7B%5Cfrac%7B1%7D%7B%7CR_%7Btest%7D%7C%7D%5Csum_%7B%28u%2Ci%2Cr%29%5Cepsilon%20R_%7Btest%7D%7D%20%28model%28u%2Ci%29%20-%20r%29%5E2%7D)
-```
+
 
 ### Top N Recommendations
 
@@ -202,9 +202,9 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 
 :o: illegal image
 
-```
+
 ![Top N Recommendation equation](https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cnewline%20%5Cmathbf%7BPrecision%20%5C%3B%20on%20%5C%3B%20Top-N%7D%3A%20Precision%28u%29%20%3D%20%5Cfrac%7B%7CRecommended%28u%29%20%5Cbigcap%20Testing%28u%29%7C%7D%7B%7CRecommended%28u%29%7C%7D%20%5Cnewline%20%5Cmathbf%7BRecall%20%5C%3Bon%20%5C%3B%20Top-N%3A%7D%20%5C%3B%20Recall%28u%29%20%3D%20%5Cfrac%7B%7CRecommended%28u%29%20%5Cbigcap%20Testing%28u%29%7C%7D%7B%7CTesting%28u%29%7C%7D%20%5Cnewline%20%5Cmathbf%7BSerendipity%2C%20DCG%3A%7D%20%5C%3B%20DCG%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bp%7D%20%5Cfrac%7B2%5E%7Brel_i%7D-1%7D%7Blog_2%28i&plus;1%29%7D)
-```
+
 
 ## Acknowledgement
 
