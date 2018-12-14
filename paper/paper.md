@@ -1,4 +1,3 @@
-
 # Big Data Application in recommender systems :smiley:  fa18-523-70
 
 | Sushmita Dash
