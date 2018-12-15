@@ -166,6 +166,8 @@ Association rules can also be used for recommendation. Items that are frequently
 > approximates user u’s rating of item i, which is denoted by rui,
 > leading to the estimate [@fa18-523-70-datajobs]."
 
+:o: why Firstly, what is second ...?
+
 Firstly, we have a set U of users, and a set D of items. Let *R* of size |U| X |D| be the matrix that contains all the ratings that the users have assigned to the items. Also, we assume that we would like to discover $K$ latent features. 
 Our task, then, is to find two matrics matrices **P** (a |U| X K matrix) and **Q** (a |D| X K matrix) such that their product approximates **R**:
 
@@ -206,6 +208,8 @@ Rating matrix can be also compressed by a neural network. So called autoencoder 
 
 ## Evaluation of recommender systems
 
+:o: grammar
+
 Few methods how the accuracy of a recommender system can be evaluated are as follows:
 
 
@@ -240,6 +244,7 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 
 ![Top N Recommendation](../paper/images/TopNRecommendation.png){#fig:TopNRecommendation}
 
+:o: now what ....?
 
 ## Acknowledgement
 
