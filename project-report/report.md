@@ -246,6 +246,10 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 
 :o: now what ....?
 
+:o: do you want to do an implementation or just a paper?
+
+:o: if implemenation you need to point to the code and develop a code and benchmark
+
 ## Acknowledgement
 
 I am thankful to Dr Gregor von Laszewski to help me complete the project and the paper for the Big Data Applications and Analytics course
