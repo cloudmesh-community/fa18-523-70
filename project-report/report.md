@@ -1,10 +1,12 @@
-# Big Data Application in Recommender Systems :smiley: fa18-523-70
+# Big Data Application in Recommender Systems :hand: fa18-523-70
 
 | Sushmita Dash
 | sushdash@iu.edu
 | Indiana University
 | hid: fa18-523-70
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-70/blob/master/project-report/report.md)
+
+:o: resubmission in spring after attending a special session on pandoc markdown, math equations in pandoc, differentiation to github markdown, and bibtex, while also being able to identify non ASCII characters in md and bib files
 
 ---
 
@@ -123,6 +125,8 @@ Then finally, the result obtained after filtering and using the algorithm, recom
 
 Recommender systems are among the most popular applications of data science today [@fa18-523-70-GoogeCloud]. They are used to predict the "rating" or "preference" that a user would give to an item. Almost every major tech company has applied them in some form or the other: Amazon uses it to suggest products to customers, YouTube uses it to decide which video to play next on auto play, and Facebook uses it to recommend pages to like and people to follow. What's more, for some companies -think Netflix and Spotify-, the business model and its success revolves around the potency of their recommendations. In fact, Netflix even offered a million dollars in 2009 to anyone who could improve its system by 10%.
 
+:o: illegal markdown, please use just one space between itemized list item and text, use 80 char to increase redability of items
+
 1.	**Simple recommenders**: offer generalized recommendations to every user, based on movie popularity and/or genre. The basic idea behind this system is that movies that are more popular and critically acclaimed will have a higher probability of being liked by the average audience. IMDB Top 250 is an example of this system.
 
 2.	**Content-based recommenders**: suggest similar items based on a particular item. This system uses item metadata, such as genre, director, description, actors, etc. for movies, to make these recommendations. The general idea behind these recommender systems is that if a person liked a particular item, he or she will also like an item that is similar to it.
@@ -165,6 +169,8 @@ Association rules can also be used for recommendation. Items that are frequently
 Firstly, we have a set U of users, and a set D of items. Let *R* of size |U| X |D| be the matrix that contains all the ratings that the users have assigned to the items. Also, we assume that we would like to discover $K$ latent features. 
 Our task, then, is to find two matrics matrices **P** (a |U| X K matrix) and **Q** (a |D| X K matrix) such that their product approximates **R**:
 
+:o: left allign
+
 ```
 		R = P x Q<sup>T</sup> = R'
 ```
@@ -192,6 +198,8 @@ Rating matrix can be also compressed by a neural network. So called autoencoder 
 ![Neural Networks](../paper/images/Picture8.png){#fig: NeuralNetworks}
 [@fa18-523-70-medium]
 
+:o: illegal citation, please follow our example
+
 
 ![Neural Networks Formula](../paper/images/Neuralnetwork.png){#fig:NeuralNetworksFormula}
 
@@ -203,6 +211,8 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 
 ### Validation of Recommender System
 
+:o: non valid markdown, reread how to do list sin lists
+
 - Recommenders can be evaluated similarly as classical machine learning models on historical data
 - Users are divided into:
   * Training set - This is fully submitted to the recommender system
@@ -212,12 +222,18 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 
 - When some obeserved data is provided,the recommender system is to predict the rating of an unknown user-item pair
 
+:o: please use 80 char width to increase readbility of markup
+
 > "The root-mean-square deviation (RMSD) or root-mean-square error (RMSE) (or sometimes root-mean-squared error) is a frequently used measure of the differences between values (sample or population values) predicted by a model or an estimator and the values observed. The RMSD represents the square root of the second sample moment of the differences between predicted values and observed values or the quadratic mean of these differences[@fa18-523-70-wiki]."
 
 ![RMSE equation](../paper/images/rmse.png){#fig:RMSEequation}
 
 
 ### Top N Recommendations
+
+:o: please use 80 char width to increase readbility of markup
+
+:o: where is yor own contribution? An entire section cited?
 
 > "The explosive growth of the world-wide-web and the emergence of e-commerce has led to the development of recommender systems---a personalized information filtering technology used to identify a set of N items that will be of interest to a certain user. User-based Collaborative filtering is the most successful technology for building recommender systems to date, and is extensively used in many commercial recommender systems. Unfortunately, the computational complexity of these methods grows linearly with the number of customers that in typical commercial applications can grow to be several millions. To address these scalability concerns item-based recommendation techniques have been developed that analyze the user-item matrix to identify relations between the different items, and use these relations to compute the list of recommendations.In this paper we present one such class of item-based recommendation algorithms that first determine the similarities between the various items and then used them to identify the set of items to be recommended. The key steps in this class of algorithms are (i) the method used to compute the similarity between the items, and (ii) the method used to combine these similarities in order to compute the similarity between a basket of items and a candidate recommender item. Our experimental evaluation on five different datasets show that the proposed item-based algorithms are up to 28 times faster than the traditional user-neighborhood based recommender systems and provide recommendations whose quality is up to 27% better[@fa18-523-70-semanticsscholar]."
 
