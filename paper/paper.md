@@ -48,6 +48,8 @@ which the users might be likely to buy or watch
 [@fa18-523-70-TowardsDataScience]. Below is a very simple illustration
 of how recommender systems work in the context of an e-commerce site.
 
++@fig:SimpleRecommenderSystemAnalogy This is a basic snapshot of a recommender system.
+
 ![Simple Recommender System[@fa18-523-70-TowardsDataScience]](images/Picture1.jpg){#fig:SimpleRecommenderSystemAnalogy}
 
 
@@ -65,6 +67,8 @@ four phases namely collection, storing, analyzing and
 filtering[@fa18-523-70-analyticsvidhya].
 
 The phases are described below:
+
++@fig:PhasesOfRecommendationEngine shows a flow diagram of phases of a reommendation engine.
 
 ![Phases of recommendation engine [@fa18-523-70-TowardsDataScience]](images/Picture2.jpg){#fig:PhasesOfRecommendationEngine}
 
@@ -178,11 +182,14 @@ missing ratings by the number zero. The resulting matrix is a truth
 table where a number one represents an interaction by users with a
 product.
 
++@fig:RatingMatrix shows a matrix representation of ratings or interactions with products.
+
 ![Rating Matrix [@fa18-523-70-TowardsDataScience]](images/Picture4.jpg){#fig:RatingMatrix}
 
 
-
 We use K-Nearest algorithm, Jaccard’s coefficient, Dijkstra’s algorithm, cosine similarity to better relate the data sets of people for recommending based on the rating or product.
+
++@fig:KNearestAlgorithm shows the K Nearest Neigbours classification 
 
 ![K Nearest algorithm [@fa18-523-70-TowardsDataScience]](images/Picture5.jpg){#fig:KNearestAlgorithm}
 
@@ -192,6 +199,8 @@ works. Then finally, the result obtained after filtering and using the
 algorithm, recommendations are given to the user based on the
 timeliness of the type of recommendation. Whether real time
 recommendation or sending an email later after some time.
+
++@fig:BigDataArchitectureOfRecommendationSystem shows high level architecture of the big data recommendation system for videos
 
 ![Big Data Architecture Of Recommendation System [@fa18-523-70-datacamp]](images/Picture6.jpg){#fig:BigDataArchitectureOfRecommendationSystem}
 
@@ -301,8 +310,12 @@ powerful but harder to train. Neural net can be also used to
 preprocess item attributes so we can combine content based and
 collaborative approaches.
 
++@fig:NeuralNetworks show image of a typical Neural Network
+
 ![Neural Networks](images/Picture8.png){#fig:NeuralNetworks}
 
+
++@fig:NeuralNetworksFormula show formula for calculating the output in a neural network
 
 ![Neural Networks Formula](images/Neuralnetwork.png){#fig:NeuralNetworksFormula}
 
@@ -323,6 +336,7 @@ Few methods how the accuracy of a recommender system can be evaluated are as fol
 - When some obeserved data is provided,the recommender system is to predict the rating of an unknown user-item pair
 
 > "The root-mean-square deviation (RMSD) or root-mean-square error (RMSE) (or sometimes root-mean-squared error) is a frequently used measure of the differences between values (sample or population values) predicted by a model or an estimator and the values observed. The RMSD represents the square root of the second sample moment of the differences between predicted values and observed values or the quadratic mean of these differences[@fa18-523-70-wiki]."
+
 
 
 ![RMSE equation](images/rmse.png){#fig:RMSEequation}
